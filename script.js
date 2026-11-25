@@ -91,7 +91,7 @@ const sem=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(); //
 function lista(foco){
   const r=ITENS.filter(([n,c,e,t])=>(aba==='todos'||c===aba)&&sem(n+' '+t).includes(sem(busca)));
   $('#cards').innerHTML=r.map(([n,c,e,t])=>`<li class="item" data-c="${c}"><h3><span aria-hidden="true">${e}</span> ${n}</h3><p>${t}</p><button class="btn alt sm" aria-pressed="${favs.has(n)}" data-n="${n}"><span aria-hidden="true">${favs.has(n)?'♥':'♡'}</span> Guardar</button></li>`).join('');
-  $('#cont').textContent=r.length?`${r.length} resultado(s) na aba “${$('[aria-selected=true]','#tabs').textContent}”.`:'Nada encontrado. Tente outra palavra ou volte para “Todos”.';
+  $('#cont').textContent=r.length?`${r.length} resultado(s) na aba “${$('[aria-selected=true]',$('#tabs')).textContent}”.`:'Nada encontrado. Tente outra palavra ou volte para “Todos”.';
   $('#favs').textContent='♥ '+favs.size;
   if(foco)$(`#cards [data-n="${foco}"]`)?.focus();
 }
@@ -101,7 +101,7 @@ $('#cards').onclick=e=>{
   mem.set('favs',[...favs]); lista(n);
 };
 $('#q').oninput=e=>{busca=e.target.value;lista()};
-const abas=$$('[role=tab]','#tabs');
+const abas=$$('[role=tab]',$('#tabs'));
 function escolher(b){
   abas.forEach(x=>{x.setAttribute('aria-selected',x===b);x.tabIndex=x===b?0:-1});
   aba=b.dataset.a; lista();
@@ -148,7 +148,7 @@ function rota(){
   $('#login').hidden = !login;
 
   if (!login) {
-    const paginas = ['inicio','sobre','explorar','vida','cores','bastidores'];
+    const paginas = ['inicio','sobre','explorar','vida','cores','bastidores','contato'];
     const alvo = paginas.includes(destino) ? destino : destino;
     const existe = document.querySelector(`[data-page="${alvo}"]`);
     const paginaFinal = existe ? alvo : 'inicio';

@@ -22,6 +22,7 @@
       <a class="page-tab" href="#vida">Vida e preservação</a>
       <a class="page-tab" href="#cores">Design</a>
       <a class="page-tab" href="#bastidores">Projeto</a>
+      <a class="page-tab" href="#contato">Contato</a>
       <a class="page-tab" href="#login">Entrar</a>
       <button class="btn alt sm" id="abtn" aria-expanded="false" aria-controls="a11y">Acessibilidade</button>
       <span id="favs" aria-live="polite" title="Itens guardados">♥ 0</span>
@@ -133,7 +134,8 @@
       </div>
     </div>
   </section>
-\n  <section id="cores" data-page="cores" aria-labelledby="t-cores"><div class="wrap">
+
+  <section id="cores" data-page="cores" aria-labelledby="t-cores"><div class="wrap">
     <h2 id="t-cores">Por que estas cores</h2>
     <p>A paleta nasceu do próprio Cerrado. As associações abaixo são tendências da psicologia das cores e variam entre culturas, então servem de guia, não de regra.</p>
     <div class="sws">
@@ -163,6 +165,20 @@
       <li><strong>Reconhecimento em vez de memorização:</strong> abas rotuladas e busca com resposta imediata.</li>
       <li><strong>Acessibilidade:</strong> fonte Atkinson Hyperlegible (criada para leitura de baixa visão), foco visível, teclado completo, modo escuro e alto contraste.</li>
     </ul>
+  </div></section>
+
+  <section id="contato" data-page="contato" aria-labelledby="t-con"><div class="wrap">
+    <h2 id="t-con">Vamos conversar?</h2>
+    <p>Conte qual fruta você nunca provou ou sugira uma pessoa ou um lugar para entrar no site. Este formulário é uma demonstração: nada é enviado.</p>
+    <form class="f" id="fc" novalidate>
+      <div><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" aria-describedby="e-nome"><span class="err" id="e-nome"></span></div>
+      <div><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" aria-describedby="e-email"><span class="err" id="e-email"></span></div>
+      <div><label for="assunto">Assunto</label><select id="assunto"><option>Sugestão de conteúdo</option><option>Dúvida</option><option>Elogio ou crítica</option></select></div>
+      <div><label for="msg">Mensagem</label><textarea id="msg" name="msg" rows="4" aria-describedby="e-msg"></textarea><span class="err" id="e-msg"></span></div>
+      <div><label><input type="checkbox" id="aceito" name="aceito" aria-describedby="e-aceito"> Aceito receber uma resposta deste projeto</label><span class="err" id="e-aceito"></span></div>
+      <button class="btn" type="submit">Enviar mensagem</button>
+      <p id="st" role="status"></p>
+    </form>
   </div></section>
 </main>
 

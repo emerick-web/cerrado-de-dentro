@@ -149,7 +149,7 @@ main section h2 { letter-spacing: -.025em; }
 .f input:focus, .f select:focus, .f textarea:focus, #q:focus { outline: 0; border-color: var(--pri); box-shadow: 0 0 0 4px color-mix(in srgb, var(--pri) 16%, transparent); }
 .box { box-shadow: var(--shadow); }
 footer { margin-top: 2rem; }
-footer h2 { color: var(--ipe); }
+footer h2 { color: var(--bg); border-bottom: 4px solid var(--ipe); display: inline-block; }
 footer li { margin: .35rem 0; }
 footer p { max-width: 58rem; color: color-mix(in srgb, var(--bg) 80%, var(--ink)); }
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
