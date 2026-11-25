@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cerrado de Dentro: frutos, bichos e gente do coração do Brasil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#home">Cerrado de Dentro</a>
+    <nav aria-label="Principal">
+      <a class="page-tab" href="#inicio">Início</a>
+      <a class="page-tab" href="#sobre">O Cerrado</a>
+      <a class="page-tab" href="#explorar">Explorar</a>
+      <a class="page-tab" href="#vida">Vida e preservação</a>
+      <a class="page-tab" href="#cores">Design</a>
+      <a class="page-tab" href="#bastidores">Projeto</a>
+      <a class="page-tab" href="#login">Entrar</a>
+      <button class="btn alt sm" id="abtn" aria-expanded="false" aria-controls="a11y">Acessibilidade</button>
+      <span id="favs" aria-live="polite" title="Itens guardados">♥ 0</span>
+    </nav>
+  </div>
+  <div class="wrap"><div id="a11y" hidden role="group" aria-label="Opções de acessibilidade">
+    <button class="btn alt sm" id="tema" aria-pressed="false">Modo escuro</button>
+    <button class="btn alt sm" id="menos" aria-label="Diminuir o tamanho da letra">A−</button>
+    <button class="btn alt sm" id="mais" aria-label="Aumentar o tamanho da letra">A+</button>
+    <span id="zv" aria-live="polite">100%</span>
+    <button class="btn alt sm" id="hc" aria-pressed="false">Alto contraste</button>
+    <button class="btn alt sm" id="calm" aria-pressed="false">Sem animações</button>
+  </div></div>
+</header>
+
+<div id="conteudo" tabindex="-1">
+<main id="home">
+
+  <section class="hero" data-page="inicio"><div class="wrap">
+    <div>
+      <h1>O Cerrado tem nome, sabor e gente.</h1>
+      <p class="lead">Oi, eu sou Enzo Emerick. Escolhi o Cerrado porque ele costuma ser lembrado só como “mato seco”, e estudando descobri o contrário: é a savana mais biodiversa do planeta e o berço de rios que abastecem o país. Montei este cantinho para contar o que aprendi, sem pressa e sem jargão.</p>
+      <div class="acoes"><a class="btn" href="#explorar">Explorar o Cerrado</a><a class="btn alt" href="#sobre">Conhecer o Cerrado</a></div>
+    </div>
+    <svg viewBox="0 0 300 300" role="img" aria-label="Ilustração de um ipê amarelo em flor">
+      <circle cx="150" cy="150" r="142" fill="var(--card)" stroke="var(--line)" stroke-width="3"/>
+      <path d="M141 262C146 212 138 190 150 150C159 190 156 215 161 262Z" fill="#6B4A2B"/>
+      <g fill="#F2B705"><circle cx="150" cy="105" r="48"/><circle cx="104" cy="132" r="34"/><circle cx="196" cy="132" r="34"/><circle cx="124" cy="82" r="30"/><circle cx="178" cy="80" r="30"/></g>
+      <g fill="#FFD84D"><circle cx="132" cy="112" r="7"/><circle cx="170" cy="96" r="7"/><circle cx="110" cy="140" r="6"/><circle cx="192" cy="136" r="6"/></g>
+      <g fill="#F2B705"><circle cx="90" cy="215" r="5"/><circle cx="210" cy="228" r="5"/><circle cx="120" cy="240" r="4"/></g>
+      <path d="M62 262h176" stroke="var(--verde)" stroke-width="7" stroke-linecap="round"/>
+    </svg>
+  </div></section>
+
+  <section data-page="inicio" aria-labelledby="t-car"><div class="wrap">
+    <h2 id="t-car">Um passeio rápido</h2>
+    <div class="car" role="region" aria-roledescription="carrossel" aria-label="Cenas do Cerrado" id="car">
+      <div id="slides" aria-live="off"></div>
+      <div class="ctrl">
+        <button class="btn alt sm" id="prev">Anterior</button>
+        <button class="btn alt sm" id="next">Próximo</button>
+        <button class="btn alt sm" id="pp">Pausar</button>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section id="sobre" data-page="sobre" aria-labelledby="t-sobre"><div class="wrap">
+    <h2 id="t-sobre">Por que o Cerrado importa</h2>
+    <p>Ocupa cerca de um quarto do território brasileiro e abriga mais de 12 mil espécies de plantas. Boa parte da vegetação nativa já virou pasto e lavoura, e por isso conhecer é o primeiro passo para proteger.</p>
+    <div class="ex">
+      <article><h3>Berço das águas</h3><p>De lá nascem rios de grandes bacias, como a do São Francisco e a do Tocantins-Araguaia. Quando o Cerrado perde vegetação, a água sente.</p></article>
+      <article><h3>Floresta de cabeça para baixo</h3><p>Muitas plantas investem nas raízes, que descem metros no solo atrás de água. Por isso o Cerrado é chamado assim: o que é grande fica escondido.</p></article>
+      <article><h3>Gente que cuida</h3><p>Povos indígenas, quilombolas, geraizeiros e apanhadoras de flores conhecem o território e fazem da colheita uma renda que mantém a vegetação em pé.</p></article>
+    </div>
+    <div class="conteudo-extra">
+      <h3>Um território de muitas paisagens</h3>
+      <p>O Cerrado não é igual em todos os lugares. Em algumas áreas, a paisagem é aberta e coberta por gramíneas; em outras, aparecem árvores baixas, arbustos retorcidos, matas próximas aos rios e campos úmidos. Essa variedade cria abrigo e alimento para muitas formas de vida.</p>
+      <h3>Adaptação ao clima</h3>
+      <p>O bioma apresenta uma estação chuvosa e outra mais seca. Muitas espécies desenvolveram características que ajudam a enfrentar esse ciclo, como cascas grossas, raízes profundas e capacidade de rebrotar. O fogo natural também faz parte da dinâmica de algumas áreas, mas queimadas frequentes ou fora de controle podem causar grandes danos.</p>
+      <h3>Por que conhecer faz diferença?</h3>
+      <p>Conhecer as espécies, os rios e as comunidades do Cerrado ajuda a entender como nossas escolhas afetam o ambiente. A conservação depende de informação, planejamento, respeito aos povos do território e uso responsável dos recursos naturais.</p>
+    </div>
+  </div></section>
+
+  <section id="explorar" data-page="explorar" aria-labelledby="t-exp"><div class="wrap">
+    <h2 id="t-exp">Explore e guarde seus favoritos</h2>
+    <p>Escolha uma aba ou digite uma palavra. O botão “Guardar” lembra do que você curtiu, mesmo se você fechar a página.</p>
+    <label for="q">Pesquisar (ex.: fruto, água, raiz)</label>
+    <input id="q" type="search" autocomplete="off">
+    <div class="tabs" role="tablist" aria-label="Categorias" id="tabs">
+      <button role="tab" data-a="todos" aria-selected="true">Todos</button>
+      <button role="tab" data-a="frutos" aria-selected="false" tabindex="-1">Frutos</button>
+      <button role="tab" data-a="bichos" aria-selected="false" tabindex="-1">Bichos</button>
+      <button role="tab" data-a="gente" aria-selected="false" tabindex="-1">Gente</button>
+    </div>
+    <p id="cont" role="status"></p>
+    <ul class="grid" id="cards"></ul>
+  </div></section>
+
+
+  <section id="vida" data-page="vida" aria-labelledby="t-vida">
+    <div class="wrap">
+      <h2 id="t-vida">Vida e preservação</h2>
+      <p>O Cerrado é uma rede de relações entre plantas, animais, água, solo e pessoas. Preservar esse ambiente significa cuidar de todos esses elementos ao mesmo tempo.</p>
+      <div class="ex">
+        <article><h3>🌱 Plantas nativas</h3><p>Pequizeiros, buritis, ipês, barus e muitas outras espécies oferecem alimento, sombra e abrigo. Suas raízes também ajudam a manter o solo estruturado e a água infiltrada.</p></article>
+        <article><h3>🐾 Animais do bioma</h3><p>Lobo-guará, tamanduá-bandeira, tatu-canastra, ema e inúmeras aves, répteis e insetos participam das relações ecológicas. Cada espécie tem um papel no funcionamento do ambiente.</p></article>
+        <article><h3>💧 Água e solo</h3><p>A vegetação nativa contribui para proteger nascentes, margens de rios e áreas de recarga. O solo saudável permite que a água da chuva infiltre e abasteça córregos e aquíferos.</p></article>
+      </div>
+      <h3 class="subtitulo">Ameaças que merecem atenção</h3>
+      <div class="lista-destaque">
+        <article><strong>Desmatamento</strong><p>A retirada da vegetação nativa fragmenta habitats e reduz os espaços disponíveis para as espécies.</p></article>
+        <article><strong>Queimadas descontroladas</strong><p>O fogo muito frequente ou intenso pode prejudicar plantas, animais, solo e comunidades locais.</p></article>
+        <article><strong>Uso inadequado da água</strong><p>A degradação de nascentes e o consumo sem planejamento afetam rios, veredas e atividades humanas.</p></article>
+        <article><strong>Fragmentação dos habitats</strong><p>Quando áreas naturais ficam isoladas, os animais encontram mais dificuldade para circular, se alimentar e reproduzir.</p></article>
+      </div>
+      <h3 class="subtitulo">Atitudes que ajudam</h3>
+      <ul class="acoes-verdes">
+        <li>Valorizar produtos de origem sustentável e o trabalho de comunidades locais.</li>
+        <li>Evitar colocar fogo em lixo, terrenos ou vegetação.</li>
+        <li>Economizar água e descartar resíduos corretamente.</li>
+        <li>Conhecer parques, reservas e projetos de educação ambiental.</li>
+        <li>Compartilhar informações responsáveis sobre a biodiversidade do Cerrado.</li>
+      </ul>
+      <div class="nota-cerrado">
+        <strong>Você sabia?</strong>
+        <p>O Cerrado é conhecido como uma região de nascentes importantes para diferentes bacias hidrográficas brasileiras. Proteger a vegetação também é uma forma de cuidar da água que chega a cidades, propriedades rurais e comunidades.</p>
+      </div>
+    </div>
+  </section>
+\n  <section id="cores" data-page="cores" aria-labelledby="t-cores"><div class="wrap">
+    <h2 id="t-cores">Por que estas cores</h2>
+    <p>A paleta nasceu do próprio Cerrado. As associações abaixo são tendências da psicologia das cores e variam entre culturas, então servem de guia, não de regra.</p>
+    <div class="sws">
+      <div class="sw"><i style="background:var(--pri)"></i><div><strong>Roxo de ipê</strong><br>Criatividade e cuidado. É a cor de ação: botões, links e foco.</div></div>
+      <div class="sw"><i style="background:var(--verde)"></i><div><strong>Verde de mata</strong><br>Natureza, equilíbrio e esperança. Marca frutos e a ideia de preservar.</div></div>
+      <div class="sw"><i style="background:var(--ipe)"></i><div><strong>Amarelo de ipê</strong><br>Otimismo e energia. Só em detalhes, nunca em texto.</div></div>
+      <div class="sw"><i style="background:var(--solo)"></i><div><strong>Terra de solo</strong><br>Calor e atenção. Marca bichos e avisos de erro.</div></div>
+      <div class="sw"><i style="background:var(--bg)"></i><div><strong>Capim claro</strong><br>Fundo calmo, mais gentil para os olhos que o branco puro.</div></div>
+    </div>
+    <h3>Contraste ao vivo (WCAG 2.2)</h3>
+    <p>Mínimos: 4,5:1 para texto comum (AA), 3:1 para texto grande e ícones, 7:1 para AAA. Troque o tema no botão “Acessibilidade” e veja os números mudarem.</p>
+    <div class="tw"><table>
+      <caption class="sr" style="position:absolute;left:-999px">Razões de contraste entre pares de cores do site</caption>
+      <thead><tr><th>Par</th><th>Cores</th><th>Razão</th><th>Resultado</th></tr></thead>
+      <tbody id="tb"></tbody>
+    </table></div>
+  </div></section>
+
+  <section id="bastidores" data-page="bastidores" aria-labelledby="t-bas"><div class="wrap">
+    <h2 id="t-bas">Bastidores: decisões de design</h2>
+    <p>Cada recurso responde a uma das 10 heurísticas de usabilidade de Jakob Nielsen:</p>
+    <ul>
+      <li><strong>Visibilidade do status:</strong> o contador de resultados e o de favoritos atualizam na hora.</li>
+      <li><strong>Controle e liberdade:</strong> dá para pausar o carrossel e desfazer um favorito.</li>
+      <li><strong>Consistência:</strong> botões e links têm sempre a mesma aparência e o mesmo comportamento.</li>
+      <li><strong>Prevenção e recuperação de erros:</strong> mensagens orientam a pessoa quando uma informação precisa ser corrigida.</li>
+      <li><strong>Reconhecimento em vez de memorização:</strong> abas rotuladas e busca com resposta imediata.</li>
+      <li><strong>Acessibilidade:</strong> fonte Atkinson Hyperlegible (criada para leitura de baixa visão), foco visível, teclado completo, modo escuro e alto contraste.</li>
+    </ul>
+  </div></section>
+</main>
+
+<!-- Página de login (visível em #login) -->
+<main id="login" hidden>
+  <section><div class="wrap">
+    <h2>Entrar</h2>
+    <p>Entre para guardar seus favoritos. É uma demonstração: nenhuma senha é enviada ou salva.</p>
+    <form class="f box" id="fl" novalidate>
+      <div><label for="lemail">E-mail</label><input id="lemail" name="lemail" type="email" autocomplete="email" aria-describedby="e-lemail"><span class="err" id="e-lemail"></span></div>
+      <div><label for="lsenha">Senha</label><input id="lsenha" name="lsenha" type="password" autocomplete="current-password" aria-describedby="e-lsenha"><span class="err" id="e-lsenha"></span></div>
+      <label><input type="checkbox" id="ver"> Mostrar senha</label>
+      <button class="btn" type="submit">Entrar</button>
+      <p id="lst" role="status"></p>
+      <a href="#home">Voltar para o início</a>
+    </form>
+  </div></section>
+</main>
+</div>
+
+<footer><div class="wrap">
+  <h2>Referências e créditos</h2>
+  <ul>
+    <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a>: HTML, CSS e JavaScript.</li>
+    <li><a href="https://dschool.stanford.edu/" target="_blank" rel="noopener">Stanford d.school</a>: design centrado nas pessoas.</li>
+    <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/" target="_blank" rel="noopener">NN/g: 10 heurísticas de usabilidade</a></li>
+    <li><a href="https://www.nngroup.com/articles/author/jakob-nielsen/" target="_blank" rel="noopener">NN/g: artigos de Jakob Nielsen</a></li>
+    <li><a href="https://www.theodinproject.com/" target="_blank" rel="noopener">The Odin Project</a>: boas práticas de front-end.</li>
+    <li><a href="https://www.gov.br/ds/fundamentos-visuais/cores?tab=visao-geral" target="_blank" rel="noopener">Design System do Governo Federal: cores</a></li>
+    <li><a href="https://www.codedex.io/" target="_blank" rel="noopener">Codédex</a>: prática de programação.</li>
+    <li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">W3C: WCAG</a> e <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener">WebAIM Contrast Checker</a></li>
+  </ul>
+  <p>Projeto final de Desenvolvimento de Interfaces (CEUB). Feito com apoio de IA (Claude, da Anthropic), estudado e revisado por Enzo Emerick. Ilustrações autorais; ícones são emojis do sistema.</p>
+</div></footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
