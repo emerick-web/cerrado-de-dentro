@@ -5,8 +5,7 @@ Frutos, bichos e gente do coração do Brasil.
 Site educativo e acolhedor sobre o Cerrado brasileiro, feito como projeto final da disciplina Desenvolvimento de Interfaces 2/2026 (CEUB), com o professor Dr. Felipe Batista da Silva.
 
 Autor: Enzo Emerick
-Site online: https://emerick-web.github.io/cerrado-de-dentro/
-Repositório: https://github.com/emerick-web/cerrado-de-dentro
+
 Versão atual: 2.1
 Sobre o projeto
 
