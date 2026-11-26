@@ -1,47 +1,76 @@
-# Cerrado de Dentro
+#🌼 Cerrado de Dentro
 
-Site educativo e acolhedor sobre o Cerrado brasileiro (frutos, bichos e gente). Projeto final de **Desenvolvimento de Interfaces 2/2026** (CEUB), por Enzo Emerick.
+Frutos, bichos e gente do coração do Brasil.
 
-## Recursos
-- Navegação por páginas (Início, O Cerrado, Explorar, Vida e preservação, Design, Projeto, Contato, Entrar)
-- Painel de acessibilidade: modo claro/escuro, fonte maior (100% a 150%), alto contraste e sem animações
-- Carrossel de imagens em SVG com pausa
-- Abas de pesquisa com busca sem acento e favoritos salvos no navegador
-- Cartões explicativos, formulário de contato e página de login (demonstrações, sem envio de dados)
-- Tabela de contraste WCAG calculada ao vivo
-- Rodapé com referências
+Site educativo e acolhedor sobre o Cerrado brasileiro, feito como projeto final da disciplina Desenvolvimento de Interfaces 2/2026 (CEUB), com o professor Dr. Felipe Batista da Silva.
 
+Autor: Enzo Emerick
+Site online: https://emerick-web.github.io/cerrado-de-dentro/
+Repositório: https://github.com/emerick-web/cerrado-de-dentro
+Versão atual: 2.1
+Sobre o projeto
 
-## Estrutura
-```
-index.html   estrutura e conteúdo
-style.css    paleta (variáveis CSS), layout e componentes
-script.js    acessibilidade, contraste, carrossel, busca, formulários e navegação
-```
+O Cerrado costuma ser lembrado só como "mato seco". O Cerrado de Dentro parte da ideia contrária: o bioma tem nome, sabor e gente. Em vez de um texto distante e enciclopédico, o site apresenta os frutos, os bichos e as comunidades que fazem parte do Cerrado, em primeira pessoa e com linguagem simples, como uma conversa.
 
+O projeto também é uma demonstração de interface acessível. A página Design mostra a paleta de cores, o significado de cada cor e uma tabela de contraste WCAG que é calculada ao vivo no navegador.
 
-## Registro de versões
-- **v1**: Arquivo único (HTML, CSS e JS juntos). Paleta, tema claro/escuro, carrossel, abas de pesquisa, formulários, login e rodapé.
-- **v2**: Site separado em index.html, style.css e script.js. Menu por páginas (Início, O Cerrado, Explorar, Vida e preservação, Design, Projeto, Entrar), conteúdo extra, botão voltar ao topo, avisos, animações de entrada e melhorias visuais.
-- **v2.1**: Correções: (1) erro de JavaScript que interrompia o script e deixava carrossel, cartões e tabela de contraste vazios; (2) seção Contato com formulário restaurada, com link no menu; (3) texto “\n” solto removido do HTML; (4) título do rodapé com contraste insuficiente no modo escuro (1,34:1) passou a ter 15,71:1.
+Para quem é
 
+Estudantes e pessoas curiosas que querem conhecer o Cerrado, e quem avalia o projeto e quer ver na prática WCAG, heurísticas de Nielsen e psicologia das cores aplicadas a um site real.
 
-## Referências
-- W3SCHOOLS. HTML, CSS and JavaScript Tutorials. https://www.w3schools.com/
-- STANFORD d.school. Hasso Plattner Institute of Design at Stanford. https://dschool.stanford.edu/
-- NIELSEN, J. 10 Usability Heuristics for User Interface Design. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/
-- NIELSEN NORMAN GROUP. Artigos de Jakob Nielsen. https://www.nngroup.com/articles/author/jakob-nielsen/
-- THE ODIN PROJECT. Full Stack Development Curriculum. https://www.theodinproject.com/
-- GOVERNO FEDERAL. Design System gov.br: fundamentos visuais, cores. https://www.gov.br/ds/fundamentos-visuais/cores?tab=visao-geral
-- CODÉDEX. Learn to code. https://www.codedex.io/
-- W3C. Web Content Accessibility Guidelines (WCAG) Overview. https://www.w3.org/WAI/standards-guidelines/wcag/
-- W3C. Understanding Success Criterion 1.4.3: Contrast (Minimum). https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html
-- WEBAIM. Contrast Checker. https://webaim.org/resources/contrastchecker/
-- GOOGLE FONTS. Atkinson Hyperlegible. https://fonts.google.com/specimen/Atkinson+Hyperlegible
-- GOOGLE FONTS. Young Serif. https://fonts.google.com/specimen/Young+Serif
-- MINISTÉRIO DO MEIO AMBIENTE E MUDANÇA DO CLIMA (via Agência Gov). No Dia do Cerrado, conheça as ações do governo federal para ampliar a conservação do bioma. 2025. https://agenciagov.ebc.com.br/noticias/202509/no-dia-do-cerrado-conheca-as-acoes-do-governo-federal-para-ampliar-a-conservacao-do-bioma
-- ICMBIO. Cartilha sobre o Cerrado (berço das águas e “floresta de cabeça para baixo”). https://www.gov.br/icmbio/pt-br/centrais-de-conteudo/publicacoes/publicacoes-diversas/fauna-e-flora/cartilha_diagramacao_final_01Nov.pdf
-- NATIONAL GEOGRAPHIC BRASIL. O que é o bioma Cerrado? 2023. https://www.nationalgeographicbrasil.com/meio-ambiente/2023/03/o-que-e-o-bioma-cerrado
-- WWF-BRASIL. Livreto sobre o Cerrado (biodiversidade e endemismo). https://wwfbrnew.awsassets.panda.org/downloads/wwf_livretoptfinal.pdf
+O tema: o Cerrado
 
+O tema foi escolhido por ser pouco genérico e por render um site humano e cheio de cor.
 
+O Cerrado ocupa cerca de um quarto do território brasileiro e abriga mais de 12 mil espécies de plantas. São valores aproximados, que variam um pouco entre as fontes.
+É chamado de berço das águas, porque dele nascem rios de grandes bacias brasileiras.
+É chamado de floresta de cabeça para baixo, porque muitas plantas investem mais nas raízes, que descem metros no solo, do que na parte de cima.
+Boa parte da vegetação nativa já virou pasto e lavoura, por isso conhecer é o primeiro passo para proteger.
+
+O conteúdo do site se divide em três grupos:
+
+Frutos: pequi, baru, buriti e cagaita.
+Bichos: lobo-guará, tamanduá-bandeira e ema.
+Gente: povos indígenas, quilombolas, apanhadoras de flores sempre-vivas e geraizeiros.
+Páginas do site
+
+O site tem uma única página HTML, e o menu troca a seção exibida sem recarregar.
+
+Início: apresentação em primeira pessoa e carrossel de cenas do Cerrado.
+O Cerrado: três cartões explicativos (berço das águas, raízes, gente que cuida) e textos de apoio.
+Explorar: abas por categoria, busca sem acento e botão "Guardar" para favoritos.
+Vida e preservação: plantas, animais, água, ameaças e atitudes.
+Design: paleta, psicologia das cores e contraste WCAG ao vivo.
+Projeto: decisões de design ligadas às heurísticas de Nielsen.
+Contato: formulário com validação.
+Entrar: página de login.
+Recursos
+Painel de acessibilidade: modo claro/escuro, letra de 100% a 150%, alto contraste e "sem animações", com as escolhas salvas no navegador. A tecla Esc fecha o painel.
+Carrossel com quatro cenas em SVG, botões de anterior, próximo e pausa, e respeito a quem prefere menos movimento.
+Abas de pesquisa e cartões: 11 cartões, busca que ignora acentos e setas do teclado para trocar de aba.
+Favoritos guardados no localStorage, com contador no menu e aviso rápido.
+Cartões explicativos nas páginas O Cerrado e Vida e preservação.
+Formulários de contato e de login com mensagens de erro ao lado do campo. São demonstrações: nada é enviado.
+
+Limitações
+O formulário de contato e o login são demonstrações: não há servidor, e nenhum dado é enviado ou guardado.
+Sem internet, as fontes caem para as de reserva, e o layout continua funcionando.
+Os emojis variam de aparência em cada aparelho.
+A navegação só por teclado e com leitor de tela ainda precisa ser testada manualmente.
+
+Próximos passos: página de ajuda, fotografias reais com texto alternativo, teste de usabilidade com pessoas do público e um back-end simples para o contato.
+
+Referências
+W3Schools: HTML, CSS e JavaScript
+Stanford d.school: design centrado nas pessoas
+Nielsen Norman Group: 10 heurísticas de usabilidade
+Nielsen Norman Group: artigos de Jakob Nielsen
+The Odin Project
+Design System do Governo Federal: cores
+Codédex
+W3C: WCAG
+WebAIM Contrast Checker
+Google Fonts: Atkinson Hyperlegible e Young Serif
+Contraste ao vivo: a tabela da página Design é recalculada quando o tema muda.
+Rodapé com referências e créditos.
+Extras: link "Pular para o conteúdo", botão "voltar ao topo" e animação suave de entrada
